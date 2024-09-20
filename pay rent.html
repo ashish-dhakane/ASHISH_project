@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent Payment Website</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body bgcolor="#bdbdbd">
+    <header>
+        <h1>Rent Payment Website</h1>
+    </header>
+    <main>
+        <section>
+            <h2>Enter Payment Information</h2>
+            <form>
+                <label for="renter-name">Renter's Name:</label>
+                <input type="text" id="renter-name" name="renter-name"><br><br>
+                <label for="rent-amount">Rent Amount:</label>
+                <select>
+                <option>
+                    12000
+                 </option>
+                 <option>
+                    15000
+                 </option>
+                 <option>
+                    20000
+                 </option>
+                 <option>
+                    250000
+                 </option>
+                </select>
+                <label for="payment-method">Payment Method:</label>
+                <select id="payment-method" name="payment-method">
+                    <option value="credit-card">Credit Card</option>
+                    <option value="bank-transfer">Bank Transfer</option>
+                    <option value="paypal">PayPal</option>
+                </select><br><br>
+                <input type="submit" value="Make Payment">
+            </form>
+        </section>
+        <section>
+            <h2>Payment Summary</h2>
+            <p id="payment-summary"></p>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

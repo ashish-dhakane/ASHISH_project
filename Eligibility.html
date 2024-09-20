@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Student Eligibility Checker</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+	<div class="container">
+		<h1> Eligibility Checker</h1>
+		<form id="eligibility-form">
+			<div class="form-group">
+				<label for="name">Name:</label>
+				<input type="text" id="name" class="input-field">
+			</div>
+			<div class="form-group">
+				<label for="age">Age:</label>
+				<input type="number" id="age" class="input-field">
+			</div>
+			<div class="form-group">
+				<label for="grade">EDUCATION:</label>
+				<select id="grade" class="input-field">
+					<option value="">Select Grade</option>
+					<option value="10">10th</option>
+					<option value="12">12th</option>
+					<option value="ug">Undergraduate</option>
+					<option value="pg">Postgraduate</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="percentage">Total Number Of RoomMates:</label>
+				<input type="number" id="percentage" class="input-field">
+			</div>
+			<button class="button" type="submit">Check Eligibility</button>
+		</form>
+		<div id="result" class="result"></div>
+	</div>
+
+	<script>
+		const form = document.getElementById("eligibility-form");
+		form.addEventListener("submit", (e) => {
+			e.preventDefault();
+			const name = document.getElementById("name").value;
+			const age = document.getElementById("age").value;
+			const grade = document.getElementById("grade").value;
+			const percentage = document.getElementById("percentage").value;
+
+			// Eligibility criteria
+			const minAge = 18;
+			const minPercentage = 6;
+
+			let eligibility = true;
+
+			if (age < minAge) {
+				eligibility = false;
+			}
+
+			if (percentage < minPercentage) {
+				eligibility = false;
+			}
+
+			if (grade === "") {
+				eligibility = false;
+			}
+
+			const resultElement = document.getElementById("result");
+			if (eligibility) {
+				resultElement.innerHTML = `Congratulations, ${name}! You are eligible to apply.`;
+			} else {
+				resultElement.innerHTML = `Sorry, ${name}. You are not eligible to apply.`;
+			}
+		});
+	</script>
+</body>
+</html>

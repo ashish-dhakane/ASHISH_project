@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <style>
+    .centered {
+      text-align: center;
+    }
+  </style>
+  
+  <div class="centered">
+
+ <FONT FACE="Roman" SIZE="+6" COLOR="#0f0e0e"><B>Please create a account and if you have one then go to home page</B></FONT>
+    <div class="search-box">
+        <select id="main-option" onchange="redirect(this.value)">
+            <option value="">Select an option</option>
+            <option value="option1"> create new account  </option>
+            <option value="option2"> Alredy have an account </option>
+            <option value="option3">forgot password </option>
+          </select>
+          
+ 
+          
+          <script>
+            function redirect(mainOptionValue) {
+              
+              switch (mainOptionValue) {
+                case 'option1':
+                  window.location.href = 'create new account.html';
+                  break;
+                case 'option2':
+                  window.location.href = 'new.html';
+                  break;
+                case 'option3':
+                  window.location.href = 'forgot password.html';
+                  break;
+                default:
+                  break;
+              }
+            }
+          </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!-- index.html (Home page) -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rental Agreement Generator</title>
+</head>
+<body>
+	<h1>Welcome to Rental Agreement Generator</h1>
+	<p>Create a rental agreement for your PG property in minutes!</p>
+	<a href="rental-agreement-form.html">Create Rental Agreement</a>
+</body>
+</html>
+
+<!-- rental-agreement-form.html -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rental Agreement Form</title>
+</head>
+<body>
+	<h1>Rental Agreement Form</h1>
+	<form>
+		<!-- fields for PG owner's details -->
+		<label for="pg-owner-name">PG Owner's Name:</label>
+		<input type="text" id="pg-owner-name" name="pg-owner-name"><br><br>
+		
+		<!-- fields for tenant's details -->
+		<label for="tenant-name">Tenant's Name:</label>
+		<input type="text" id="tenant-name" name="tenant-name"><br><br>
+		
+		<!-- fields for rental property details -->
+		<label for="rental-property-address">Rental Property Address:</label>
+		<input type="text" id="rental-property-address" name="rental-property-address"><br><br>
+		
+		<!-- fields for terms and conditions -->
+		<label for="lease-period">Lease Period:</label>
+		<input type="text" id="lease-period" name="lease-period"><br><br>
+		
+		<!-- signature fields -->
+		<label for="pg-owner-signature">PG Owner's Signature:</label>
+		<input type="text" id="pg-owner-signature" name="pg-owner-signature"><br><br>
+		<label for="tenant-signature">Tenant's Signature:</label>
+		<input type="text" id="tenant-signature" name="tenant-signature"><br><br>
+		
+		<input type="submit" value="Generate Rental Agreement">
+	</form>
+</body>
+</html>
+
+<!-- preview-and-download.html -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Preview and Download Rental Agreement</title>
+</head>
+<body>
+	<h1>Preview and Download Rental Agreement</h1>
+	<!-- generated rental agreement will be displayed here -->
+	<div id="rental-agreement-preview"></div>
+	<button id="download-btn">Download as PDF</button>
+</body>
+</html>

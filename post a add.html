@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>House Listings</title>
+	<style>
+	 
+		body {
+			font-family: Arial, sans-serif;
+		}
+		.listing {
+			border: 1px solid #ccc;
+			padding: 10px;
+			margin-bottom: 20px;
+		}
+		.listing img {
+			width: 100%;
+			height: 150px;
+			object-fit: cover;
+		}
+	</style>
+</head>
+<body>
+	<h1>House Listings</h1>
+	 
+	<form>
+		<label for="title">Title:</label>
+		<input type="text" id="title" name="title"><br><br>
+		<label for="description">Description:</label>
+		<textarea id="description" name="description"></textarea><br><br>
+		<label for="price">Price:</label>
+		<input type="number" id="price" name="price"><br><br>
+		<label for="image">Image:</label>
+		<input type="file" id="image" name="image"><br><br>
+		<input type="submit" value="Submit Listing">
+	</form>
+	
+ 
+	<div class="listings">
+	 
+		<div class="listing">
+			<img src="download.jpeg" alt="House Image">
+			<h2>House for Sale</h2>
+			<p>Description: This is a beautiful house for sale.</p>
+			<p>Price: 50,00,000</p>
+		</div>
+		<div class="listing">
+			<img src="c.jpeg" alt="House Image">
+			<h2>House for Rent</h2>
+			<p>Description: This is a  house for rent.</p>
+			<p>Price: 15,000/month</p>
+		</div>
+	 
+	</div>
+	
+ 
+</body>
+</html>

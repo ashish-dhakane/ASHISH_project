@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sell or Rent your Property For Free</title>
+    <style>
+        body {
+            font-family: Arial;
+            text-align: center;
+        }
+        
+        .container {
+            width: 80%;
+            margin: 40px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .form-row {
+            margin-bottom: 20px;
+        }
+        
+        input[type="text"], input[type="email"], input[type="tel"], select {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-family: Arial;
+        }
+        
+        .phone-input {
+            display: inline-block;
+        }
+        
+        .phone-input select {
+            width: 60px;
+        }
+        
+        .radio-group {
+            display: inline-block;
+        }
+        
+        .radio-button {
+            margin-right: 20px;
+        }
+        
+        .btn-submit {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: Arial;
+        }
+        
+        .btn-submit:hover {
+            background-color: #3e8e41;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1 style="margin-bottom: 20px; font-family: Arial;">Sell or Rent your Property For Free</h1>
+            <form>
+                <div class="form-row">
+                    <input type="text" placeholder="Name" required style="width: 250px; margin-right: 20px; font-family: Arial;">
+                    <input type="email" placeholder="Email" required style="width: 250px; font-family: Arial;">
+                </div>
+                <div class="form-row">
+                    <div class="phone-input">
+                        <select style="font-family: Arial;">
+                            <option value="+91">+91</option>
+                        </select>
+                        <input type="tel" placeholder="Mobile Number" required style="width: 200px; font-family: Arial;">
+                    </div>
+                    <select required style="width: 150px; margin-left: 20px; font-family: Arial;">
+                        <option value="" disabled selected>Select City</option>
+                        <option value="mumbai">Mumbai</option>
+                        <option value="delhi">Delhi</option>
+                        <option value="pune">Pune</option>
+                    </select>
+                </div>
+                <div class="form-row">
+                    <h3 style="margin-bottom: 10px; font-family: Arial;">Property type</h3>
+                    <div class="radio-group">
+                        <label class="radio-button">
+                            <input type="radio" name="property-type" value="residential" checked>
+                            <span style="font-family: Arial;">Residential</span>
+                        </label>
+                        <label class="radio-button">
+                            <input type="radio" name="property-type" value="commercial">
+                            <span style="font-family: Arial;">Commercial</span>
+                        </label>
+                        <label class="radio-button">
+                            <input type="radio" name="property-type" value="land">
+                            <span style="font-family: Arial;">Land/Plot</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <h3 style="margin-bottom: 10px; font-family: Arial;">Select Property Ad Type</h3>
+                    <div class="radio-group">
+                        <label class="radio-button">
+                            <input type="radio" name="ad-type" value="rent" checked>
+                            <span style="font-family: Arial;">Rent</span>
+                        </label>
+                        <label class="radio-button">
+                            <input type="radio" name="ad-type" value="resale">
+                            <span style="font-family: Arial;">Resale</span>
+                        </label>
+                        <label class="radio-button">
+                            <input type="radio" name="ad-type" value="pg">
+                            <span style="font-family: Arial;">PG/Hostel</span>
+                        </label>
+                        <label class="radio-button">
+                            <input type="radio" name="ad-type" value="flatmates">
+                            <span style="font-family: Arial;">Flatmates</span>
+                        </label>
+                    </div>
+                </div>
+                <button type="submit" class="btn-submit" style="font-family: Arial;">Start Posting Your Ad For FREE</button>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
